@@ -14,3 +14,5 @@ pip install -r requirements.txt
 ## Usage
 
 Run main.py to start the API. By default it's listening on localhost:8000.
+
+GET request on localhost:8000/ will return a json with a matrix map ( key=XYposition, value=symbol ) and an array of clusters with symbol coordinates.
