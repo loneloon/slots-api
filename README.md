@@ -6,11 +6,11 @@
 
 ## Installation
 
-Use [pip](https://pip.pypa.io/en/stable/) to install the list dependencies found in the root of the project
+Use [pip](https://pip.pypa.io/en/stable/) to install the list of dependencies found in the root of the project
 ```
 pip install -r requirements.txt
 ```
 
 ## Usage
 
-Run main.py to start the API. By default it's listening on localhost:8000. Change it to your preference!
+Run main.py to start the API. By default it's listening on localhost:8000.
