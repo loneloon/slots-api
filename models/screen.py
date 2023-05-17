@@ -6,11 +6,6 @@ import datetime
 
 from models.reel import Reel
 
-# COMMENTS REQUIRED BEFORE COMMIT
-# REMOVE COMMENTED LOGGING
-
-# METHOD NAMES ARE A LITTLE CONFUSING
-
 
 class Screen:
     def __init__(self, reels, min_matches_for_cluster, payout_ratio):
@@ -42,7 +37,7 @@ class Screen:
                         combinations.append(current_combination)
         return combinations
 
-    # Depth first search algorith
+    # Depth first search algorithm
     def build_chain(self, row_idx, col_idx, isFirstElement):
         current_cell = self.reels[row_idx, col_idx]
         chain = []
