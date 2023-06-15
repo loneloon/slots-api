@@ -1,12 +1,13 @@
 from flask import Flask
 from models.screen import ScreenFactory
+from flask_cors import CORS
 
 DEFAULT_MINIMUM_SYMBOL_MATCHES_FOR_CLUSTER = 5
 DEFAULT_PAYOUT_RATIO = 0.032
 DEFAULT_MATRIX_DIMENSIONS = [7, 7]
 
 app = Flask('Devour Slots')
-
+CORS(app)
 
 @app.route("/", methods=['GET'])
 def get_screen():
