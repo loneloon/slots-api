@@ -99,7 +99,7 @@ class Screen:
         return {f'{i}{j}':self.reels[j, i].key for i in range(self.array_width) for j in range(self.array_height)}
 
     def calculate_payout_modifier(self, streak, symbol_value):
-        return self.payout_ratio * streak * symbol_value
+        return self.payout_ratio * streak * (symbol_value**2)
 
     def generate_single_cluster_dto(self, cluster):
         cluster_coordinates_stringified = ':'.join([str(cell[1][1]) + str(cell[1][0]) for cell in cluster])
